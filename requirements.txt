@@ -1,0 +1,2 @@
+#requirements created by pipreqs --force \path\to\project
+requests==2.24.0
