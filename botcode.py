@@ -58,7 +58,7 @@ def main():
 
         if len(all_updates) > 0:
             for current_update in all_updates:
-                if 'message' in current_update.keys:    
+                if 'message' in current_update.keys():    
                     print(current_update)
                     first_update_id = current_update['update_id']
                     if 'text' not in current_update['message']:
@@ -76,10 +76,10 @@ def main():
                         first_chat_name = "unknown"
     
                     if first_chat_text == 'Hi':
-                        journos_bot.send_message(first_chat_id, 'Morning ' + first_chat_name)
+                        journos_bot.send_message(first_chat_id, 'Selam ' + first_chat_name)
                         new_offset = first_update_id + 1
                     else:
-                        journos_bot.send_message(first_chat_id, 'How are you doing '+first_chat_name)
+                        journos_bot.send_message(first_chat_id, 'Naber '+first_chat_name)
                         new_offset = first_update_id + 1
 
 
